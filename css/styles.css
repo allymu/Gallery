@@ -1,7 +1,7 @@
 
 .gallery {
 display: grid;
-grid-template-columns: repeat(auto-fit, 200px);
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 grid-template-rows: repeat(auto-fit, 200px);
 grid-column-gap: 30px;
 grid-row-gap: 30px;
@@ -23,6 +23,9 @@ grid-row-gap: 30px;
 
 .center {
     display: block;
+    justify-content: center;
     max-width: 890px;
     margin: auto;
 }
+
+
